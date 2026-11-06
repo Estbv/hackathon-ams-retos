@@ -108,6 +108,8 @@ La arquitectura la deciden ustedes. Por ejemplo:
 | Archivo | Contenido |
 |---|---|
 | `kit/servicio.md` | Ficha de `orders-api`: arquitectura, valores normales, SLO, severidades y referencia completa de la API |
+| `kit/guia-conexion.md` | Cómo conectar su sistema con el servicio de forma correcta |
+| `kit/verificar_conexion.py` | Verificación automática de la conexión con el servicio y con MaaS |
 | `kit/simulador/` | El simulador (Python, sin dependencias) y 2 escenarios de práctica |
 | `kit/simulador/README.md` | Cómo ejecutarlo, acelerarlo (`--speed`) y **crear sus propios escenarios** |
 | `kit/conocimiento/problemas_conocidos.json` | La base de conocimiento del equipo de operaciones |
@@ -151,6 +153,7 @@ Cada fase tiene un **producto final** que el jurado revisa. Para que el jurado p
 - El documento de arquitectura inicial.
 
 **Producto final de la fase:**
+- [ ] `kit/verificar_conexion.py --maas` termina con 0 fallas desde la máquina donde corre su sistema. Sigan `kit/guia-conexion.md`.
 - [ ] Un comando que muestra el estado actual del servicio a partir de las métricas, el health check y las dependencias.
 - [ ] Un archivo con la línea base calculada a partir de datos reales del simulador, no copiada de `servicio.md`.
 - [ ] La protección de datos aplicada: ninguna contraseña, tarjeta, token, correo ni IP completa sale del conector.

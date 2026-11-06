@@ -292,6 +292,10 @@ class Sim:
 
 
 # ---------------------------------------------------------------------- HTTP
+class BadRequest(ValueError):
+    """Parámetro inválido en la petición: se responde 400 con un mensaje claro."""
+
+
 class Handler(BaseHTTPRequestHandler):
     sim: Sim = None  # type: ignore
     server_version = "orders-sim/1.0"
@@ -356,7 +360,7 @@ class Handler(BaseHTTPRequestHandler):
                 with sim.lock:
                     return self._send(200, sim.snapshot())
             if p == "/metrics/history" and method == "GET":
-                minutes = min(360, max(1, int(q.get("minutes", 30))))
+                minutes = min(360, max(1, self._int_param(q, "minutes", 30)))
                 with sim.lock:
                     cutoff = now().timestamp() - minutes * 60
                     rows = [{k: v for k, v in h.items() if k != "ts_obj"} for h in sim.history
@@ -390,19 +394,38 @@ class Handler(BaseHTTPRequestHandler):
                 if m.group(2):
                     return self._update_incident(inc, self._body())
             return self._send(404, {"error": "not found"})
+        except BadRequest as e:
+            return self._send(400, {"error": "bad request", "detail": str(e)})
         except Exception as e:  # noqa: BLE001
             return self._send(500, {"error": "simulator error", "detail": str(e)})
 
+    @staticmethod
+    def _ts_param(q: dict, name: str):
+        """Fecha ISO 8601 de un parámetro. Acepta el '+' de la zona horaria aunque llegue sin codificar."""
+        raw = q.get(name)
+        if not raw:
+            return None
+        try:
+            ts = datetime.fromisoformat(raw.strip().replace(" ", "+") if "T" in raw else raw.strip())
+        except ValueError:
+            raise BadRequest(f"parámetro '{name}' inválido: use ISO 8601, p. ej. 2026-10-20T14:05:00+00:00")
+        return ts if ts.tzinfo else ts.astimezone()
+
+    @staticmethod
+    def _int_param(q: dict, name: str, default: int) -> int:
+        try:
+            return int(q.get(name, default))
+        except ValueError:
+            raise BadRequest(f"parámetro '{name}' debe ser un entero")
+
     def _logs(self, q: dict) -> dict:
         sim = self.sim
-        min_level = LEVELS.get(q.get("level", "DEBUG").upper(), 0)
-        limit = min(2000, max(1, int(q.get("limit", 200))))
-        since = datetime.fromisoformat(q["since"]) if q.get("since") else None
-        until = datetime.fromisoformat(q["until"]) if q.get("until") else None
-        if since and since.tzinfo is None:
-            since = since.astimezone()
-        if until and until.tzinfo is None:
-            until = until.astimezone()
+        level = q.get("level", "DEBUG").upper()
+        if level not in LEVELS:
+            raise BadRequest(f"parámetro 'level' inválido: use {', '.join(LEVELS)}")
+        min_level = LEVELS[level]
+        limit = min(2000, max(1, self._int_param(q, "limit", 200)))
+        since, until = self._ts_param(q, "since"), self._ts_param(q, "until")
         with sim.lock:
             rows = [e for e in sim.logs
                     if LEVELS[e["level"]] >= min_level

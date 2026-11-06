@@ -3,6 +3,8 @@
 | Archivo | Contenido |
 |---|---|
 | `servicio.md` | Ficha de `orders-api`: arquitectura, valores normales, SLO, matriz de severidad y referencia de la API |
+| `guia-conexion.md` | **Cómo conectar su sistema con el servicio:** configuración, plan de consultas, tiempo, errores, ITSM, tools y lista de comprobación |
+| `verificar_conexion.py` | Verifica automáticamente la conexión con el servicio y con MaaS |
 | `simulador/simulador.py` | El servicio simulado al que se conectan sus agentes |
 | `simulador/escenarios/` | 2 escenarios de práctica |
 | `simulador/README.md` | Cómo ejecutar el simulador y crear escenarios |
@@ -13,6 +15,6 @@ Inicio rápido:
 
 ```bash
 cd simulador && python simulador.py --speed 5
-# en otra terminal:
-curl http://localhost:8080/metrics
+# en otra terminal, desde kit/:
+python verificar_conexion.py --url http://localhost:8080 --maas
 ```

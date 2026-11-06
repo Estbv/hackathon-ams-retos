@@ -103,4 +103,6 @@ Respuesta: `{"count", "truncated", "lines": [...]}`.
 | `GET /itsm/incidents`, `GET /itsm/incidents/{id}` | Consulta de incidentes |
 | `POST /itsm/incidents/{id}/update` | Actualiza el incidente: `{"status": "OPEN" \| "MITIGATED" \| "RESOLVED", "severity": "...", "note": "...", ...}` |
 
+Los parámetros inválidos (por ejemplo, un `level` o una fecha mal escrita) devuelven 400 con un `detail` que explica el problema. Cómo conectarse correctamente: [`guia-conexion.md`](guia-conexion.md).
+
 Esta es toda la API. No hay otros endpoints: cualquier otra ruta responde 404. Los escenarios de falla se eligen al arrancar el simulador (ver `simulador/README.md`).
