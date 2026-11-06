@@ -156,7 +156,9 @@ def evaluar(test: dict, incs: list[dict], marks: dict, snap_no_downgrade, speed:
 
     kws = exp.get("keywords")
     if kws:
-        campos = " ".join(str(inc.get(k, "")) for k in ("title", "summary", "root_cause")).lower()
+        # la causa puede venir en el ticket o en una actualización posterior (investigación asíncrona)
+        campos = " ".join([str(inc.get(k, "")) for k in ("title", "summary", "root_cause")]
+                          + [json.dumps(u, ensure_ascii=False) for u in inc.get("updates", [])]).lower()
         hit = [k for k in kws if k.lower() in campos]
         checks.append((OK, f"La causa menciona: {', '.join(hit[:3])}") if hit else
                       (WARN, "La causa no menciona lo esperado: revísela a mano "

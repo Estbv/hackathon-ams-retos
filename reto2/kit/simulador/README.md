@@ -73,7 +73,7 @@ Arranque su sistema apuntando a `http://localhost:8080` durante la cuenta regres
 - la cantidad de incidentes (deduplicación)
 - la severidad
 - el tiempo de detección
-- si la causa menciona lo esperado (es una pista: si no lo menciona, revísela a mano)
+- si la causa menciona lo esperado, en el ticket o en sus actualizaciones (es una pista: si no lo menciona, revísela a mano)
 - datos sensibles en los tickets
 - con `--cierre`, que el incidente quede `RESOLVED`
 
