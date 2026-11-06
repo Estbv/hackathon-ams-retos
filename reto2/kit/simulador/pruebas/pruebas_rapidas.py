@@ -197,10 +197,12 @@ def main() -> int:
     ap.add_argument("--pausa", type=float, default=30, help="segundos sanos entre pruebas")
     ap.add_argument("--seed", type=int, default=7)
     ap.add_argument("--salida", default="resultados-pruebas.json")
+    ap.add_argument("--escenarios", default=str(ESCENARIOS),
+                    help="carpeta con pruebas propias (archivos T*.json con bloque 'test'); por defecto las del kit")
     args = ap.parse_args()
     CIERRE = args.cierre
 
-    files = sorted(ESCENARIOS.glob("T*.json"))
+    files = sorted(Path(args.escenarios).glob("T*.json"))
     if args.solo:
         wanted = {s.upper() for s in args.solo}
         files = [f for f in files if f.name.split("-")[0].upper() in wanted]
@@ -208,6 +210,11 @@ def main() -> int:
         print("No hay pruebas que ejecutar.")
         return 2
     tests = [json.loads(f.read_text(encoding="utf-8")) for f in files]
+    invalid = [f.name for f, t in zip(files, tests)
+               if "test" not in t or "expect" not in t["test"] or "duration_s" not in t["test"]]
+    if invalid:
+        print(f"Archivos sin bloque 'test' válido (titulo, valida, duration_s, expect): {', '.join(invalid)}")
+        return 2
 
     sim = S.Sim(args.speed, args.seed)
     S.Handler.sim = sim

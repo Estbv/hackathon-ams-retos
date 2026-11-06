@@ -82,4 +82,18 @@ Arranque su sistema apuntando a `http://localhost:8080` durante la cuenta regres
 - El detalle queda en `resultados-pruebas.json`.
 - El código de salida es 0 si todo está bien, 1 si hay advertencias y 2 si hay fallas.
 
+**Pruebas propias:** pueden escribir sus propias pruebas con el mismo formato y ejecutarlas con `--escenarios <carpeta>`. Es un escenario normal con un bloque `test` adicional:
+
+```json
+"test": {
+  "titulo": "...", "valida": "...", "duration_s": 300,
+  "expect": {"incidents": "one", "severity": ["SEV2"], "max_detection_s": 120,
+             "keywords": ["..."], "resolved": true, "no_downgrade_until_s": 230}
+}
+```
+
+- `incidents` puede ser `"none"`, `"one"` o `"visibility"`.
+- El bloque opcional `"harness": {"offline": {"at": 60, "duration": 75}}` apaga el simulador durante ese tiempo.
+- Los nombres de archivo deben empezar con `T`.
+
 Estas pruebas no reemplazan la evaluación del jurado, que usa escenarios distintos. Sirven para comprobar rápido, después de cada cambio, que no rompieron nada básico.
