@@ -120,6 +120,8 @@ La arquitectura la deciden ustedes. Por ejemplo:
 - Cabecera: `Authorization: Bearer <API key>`
 - Modelo: `glm-5.2`
 
+**Pruebas rápidas:** `kit/simulador/pruebas/pruebas_rapidas.py` ejecuta 8 pruebas cortas (unos 40 min) y revisa automáticamente los tickets de su sistema. Úsenlas después de cada cambio importante.
+
 **Consejo:** creen sus propios escenarios de falla. Los dos de práctica no alcanzan para estar listos para la evaluación.
 
 ---

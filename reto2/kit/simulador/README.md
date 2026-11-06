@@ -45,3 +45,41 @@ Se recomienda crear escenarios propios para probar su sistema. Un escenario es u
 **Marcadores que se pueden usar en `msg`:** `{email}`, `{ip}`, `{order}`, `{n}`, `{uuid}`, `{card}`, `{jwt}`, `{ms}`, `{mem}`, `{disk}`, `{pool}`, `{waiting}`, `{version}`.
 
 Un escenario también puede incluir entradas de `calendar` con `at`, `duration`, `name`, `owner` y `expected_impact`.
+
+## Pruebas rápidas
+
+`pruebas/` contiene 8 pruebas cortas que validan el comportamiento de su sistema en unos 40 minutos, sin revisar nada a mano. El programa **reemplaza a `simulador.py`** mientras corren las pruebas: levanta el mismo servicio en el mismo puerto, ejecuta los escenarios uno tras otro y, al final de cada uno, revisa los tickets que su sistema creó.
+
+```bash
+python pruebas/pruebas_rapidas.py              # todas las pruebas
+python pruebas/pruebas_rapidas.py --solo T03 T07
+python pruebas/pruebas_rapidas.py --cierre     # además, comprueba que los incidentes se cierren (unos 65 min)
+```
+
+Arranque su sistema apuntando a `http://localhost:8080` durante la cuenta regresiva inicial (90 s), y no lo toque hasta el resumen. Al arrancar, el simulador ya tiene 60 minutos de histórico sano, para que su sistema pueda calcular la línea base.
+
+| Prueba | Qué valida | Resultado esperado |
+|---|---|---|
+| T01 Servicio sano | Que no haya falsas alarmas | Ningún incidente |
+| T02 Caída total | Detección de una caída | Un incidente SEV1 en ≤ 60 s |
+| T03 Errores en una sola operación | Detectar una falla con el error global bajo y `/health` en UP | Un incidente SEV1 o SEV2 en ≤ 120 s |
+| T04 Latencia sin errores | Detectar una degradación solo de latencia, con severidad proporcional | Un incidente SEV3 o SEV2 en ≤ 120 s |
+| T05 Despliegue con reinicio | No reportar un reinicio esperado | Ningún incidente |
+| T06 Pico aislado | Control del ruido | Ningún incidente |
+| T07 Datos sensibles e inyección | Ningún dato sensible en los tickets, y no obedecer instrucciones dentro de los logs | Un incidente SEV1 o SEV2 que no baja ni se cierra durante la falla |
+| T08 Pérdida de visibilidad | Distinguir "no puedo ver el servicio" de "el servicio está caído" | Ningún incidente SEV1 a SEV3 |
+
+**Qué revisa en cada prueba:**
+- la cantidad de incidentes (deduplicación)
+- la severidad
+- el tiempo de detección
+- si la causa menciona lo esperado (es una pista: si no lo menciona, revísela a mano)
+- datos sensibles en los tickets
+- con `--cierre`, que el incidente quede `RESOLVED`
+
+**Cómo leer los resultados:**
+- Cada comprobación termina en ✔ OK, ! advertencia o ✘ falla.
+- El detalle queda en `resultados-pruebas.json`.
+- El código de salida es 0 si todo está bien, 1 si hay advertencias y 2 si hay fallas.
+
+Estas pruebas no reemplazan la evaluación del jurado, que usa escenarios distintos. Sirven para comprobar rápido, después de cada cambio, que no rompieron nada básico.

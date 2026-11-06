@@ -1,0 +1,23 @@
+{
+  "name": "T03-errores-un-endpoint",
+  "test": {
+    "titulo": "Errores en una sola operación",
+    "valida": "Detección de errores que afectan solo a GET /api/orders (el error global es bajo y /health sigue en UP), y relación con un cambio de datos.",
+    "duration_s": 360,
+    "expect": {"incidents": "one", "severity": ["SEV2", "SEV1"], "max_detection_s": 120,
+               "keywords": ["pedido", "order", "nullpointer", "migraci", "CHG-T03"],
+               "resolved": true}
+  },
+  "steps": [
+    {"at": 0, "change": {"id": "CHG-T03", "type": "data", "service": "orders-db",
+                         "description": "Migración de datos: archivado de clientes inactivos", "by": "dba.team"}},
+    {"at": 0, "mark": "fault_start"},
+    {"at": 0, "status_codes": {"orders": 500}},
+    {"at": 0, "set": {"err_orders": 0.45}},
+    {"at": 1, "log": {"level": "ERROR", "logger": "c.o.orders.web.OrderController",
+                      "msg": "GET /api/orders/ORD-{order} failed: java.lang.NullPointerException: Cannot invoke \"Customer.getEmail()\" because \"order.customer\" is null (requested by {email})",
+                      "every": 2, "until": 240}},
+    {"at": 240, "recover": true},
+    {"at": 240, "mark": "fault_end"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "T08-sin-visibilidad",
+  "test": {
+    "titulo": "Pérdida de visibilidad",
+    "valida": "Que el sistema distinga 'no puedo ver el servicio' de 'el servicio está caído': el simulador deja de responder 75 s mientras el servicio está sano.",
+    "duration_s": 240,
+    "expect": {"incidents": "visibility"},
+    "harness": {"offline": {"at": 60, "duration": 75}}
+  },
+  "steps": [
+    {"at": 60, "mark": "anomaly_start"}
+  ]
+}

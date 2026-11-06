@@ -1,0 +1,10 @@
+{
+  "name": "T01-servicio-sano",
+  "test": {
+    "titulo": "Servicio sano",
+    "valida": "Que el sistema no genere falsas alarmas con el servicio normal.",
+    "duration_s": 180,
+    "expect": {"incidents": "none"}
+  },
+  "steps": []
+}

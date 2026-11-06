@@ -1,0 +1,23 @@
+{
+  "name": "T04-latencia-sin-errores",
+  "test": {
+    "titulo": "Latencia fuera del SLO sin errores",
+    "valida": "Detección de una degradación solo de latencia, severidad proporcional (SEV3) y relación con un cambio de infraestructura.",
+    "duration_s": 360,
+    "expect": {"incidents": "one", "severity": ["SEV3", "SEV2"], "max_detection_s": 120,
+               "keywords": ["failover", "réplica", "replica", "zona", "base de datos", "orders-db", "CHG-T04"],
+               "resolved": true}
+  },
+  "steps": [
+    {"at": 0, "change": {"id": "CHG-T04", "type": "infra", "service": "orders-db",
+                         "description": "Failover de orders-db a la réplica secundaria en la zona B", "by": "dba.team"}},
+    {"at": 0, "mark": "fault_start"},
+    {"at": 0, "ramp": {"lat_p50": {"to": 650, "over": 20}, "lat_p95": {"to": 2400, "over": 30},
+                       "pool_active": {"to": 12, "over": 30}}},
+    {"at": 5, "log": {"level": "WARN", "logger": "c.o.orders.db.ConnectionMonitor",
+                      "msg": "orders-db round-trip latency {ms}ms to orders-db-replica-b (cross-zone)",
+                      "every": 6, "until": 240}},
+    {"at": 240, "recover": true},
+    {"at": 240, "mark": "fault_end"}
+  ]
+}

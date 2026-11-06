@@ -1,0 +1,17 @@
+{
+  "name": "T05-despliegue-esperado",
+  "test": {
+    "titulo": "Despliegue normal con reinicio",
+    "valida": "Que el reinicio esperado de un despliegue (unos 20 s de 502) no se reporte como incidente.",
+    "duration_s": 180,
+    "expect": {"incidents": "none"}
+  },
+  "steps": [
+    {"at": 0, "mark": "anomaly_start"},
+    {"at": 0, "change": {"id": "CHG-T05", "type": "deploy", "service": "orders-api", "version": "3.1.5",
+                         "description": "Release 3.1.5: nuevos textos del correo de confirmación", "by": "release.bot"}},
+    {"at": 0, "restart": {"downtime": 20, "logs": [
+      {"level": "INFO", "logger": "c.o.orders.lifecycle.ShutdownHook", "thread": "SpringApplicationShutdownHook",
+       "msg": "Received SIGTERM - graceful shutdown for deployment CHG-T05"}]}}
+  ]
+}

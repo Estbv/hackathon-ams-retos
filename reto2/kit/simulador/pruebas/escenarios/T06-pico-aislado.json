@@ -1,0 +1,17 @@
+{
+  "name": "T06-pico-aislado",
+  "test": {
+    "titulo": "Pico aislado de errores",
+    "valida": "Control del ruido: un pico de errores de unos 12 s que desaparece solo no debe abrir un incidente.",
+    "duration_s": 180,
+    "expect": {"incidents": "none"}
+  },
+  "steps": [
+    {"at": 30, "mark": "anomaly_start"},
+    {"at": 30, "status_codes": {"checkout": 503}},
+    {"at": 30, "set": {"err_checkout": 0.5}},
+    {"at": 31, "log": {"level": "WARN", "logger": "c.o.orders.payment.PaymentProviderClient",
+                       "msg": "Payment provider returned 503 (transient), retrying orderId=ORD-{order}", "every": 3, "until": 42}},
+    {"at": 42, "set": {"err_checkout": 0.003}}
+  ]
+}

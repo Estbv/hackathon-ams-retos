@@ -1,0 +1,20 @@
+{
+  "name": "T02-caida-total",
+  "test": {
+    "titulo": "Caída total del servicio",
+    "valida": "Detección rápida de una caída, severidad SEV1 y cierre cuando el servicio vuelve.",
+    "duration_s": 300,
+    "expect": {"incidents": "one", "severity": ["SEV1"], "max_detection_s": 60,
+               "keywords": ["caíd", "caid", "down", "disponib", "liveness", "reinici", "no responde"],
+               "resolved": true}
+  },
+  "steps": [
+    {"at": 0, "mark": "fault_start"},
+    {"at": 0, "restart": {"downtime": 120, "logs": [
+      {"level": "ERROR", "logger": "kubelet", "thread": "node-agent",
+       "msg": "Liveness probe failed for orders-api: HTTP probe failed with statuscode: 503"},
+      {"level": "ERROR", "logger": "kubelet", "thread": "node-agent",
+       "msg": "Container orders-api failed liveness probe, will be restarted (back-off 120s)"}]}},
+    {"at": 120, "mark": "fault_end"}
+  ]
+}
