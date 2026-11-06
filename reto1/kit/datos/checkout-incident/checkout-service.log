@@ -1,0 +1,636 @@
+2026-10-20 13:40:00.534  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:40:00.231  INFO 5377 --- [nio-8080-exec-18] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 244ms orderId=ORD-884001 customer=chen.yu45@example.com status=200
+2026-10-20 13:40:17.518  INFO 5377 --- [nio-8080-exec-27] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 162ms orderId=ORD-884002 customer=jane.doe34@example.com status=200
+2026-10-20 13:40:30.430  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:40:35.979  INFO 5377 --- [nio-8080-exec-33] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 154ms orderId=ORD-884003 customer=ana.silva44@example.com status=200
+2026-10-20 13:40:59.576  INFO 5377 --- [nio-8080-exec-25] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 196ms orderId=ORD-884004 customer=ana.silva89@example.com status=200
+2026-10-20 13:41:00.379  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:41:21.918  INFO 5377 --- [nio-8080-exec-30] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 227ms orderId=ORD-884005 customer=chen.yu59@example.com status=200
+2026-10-20 13:41:30.895  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:41:38.693  INFO 5377 --- [nio-8080-exec-15] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 188ms orderId=ORD-884006 customer=ana.silva9@example.com status=200
+2026-10-20 13:42:00.044  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:42:00.009  INFO 5377 --- [nio-8080-exec-35] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 206ms orderId=ORD-884007 customer=omar.ali46@example.com status=200
+2026-10-20 13:42:13.077  INFO 5377 --- [nio-8080-exec-22] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 226ms orderId=ORD-884008 customer=li.wei52@example.com status=200
+2026-10-20 13:42:30.714  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:42:30.275  INFO 5377 --- [nio-8080-exec-37] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 254ms orderId=ORD-884009 customer=chen.yu28@example.com status=200
+2026-10-20 13:42:51.753  INFO 5377 --- [nio-8080-exec-16] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 165ms orderId=ORD-884010 customer=eva.novak95@example.com status=200
+2026-10-20 13:43:00.542  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:43:14.856  INFO 5377 --- [nio-8080-exec-16] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 165ms orderId=ORD-884011 customer=john.smith30@example.com status=200
+2026-10-20 13:43:26.628  INFO 5377 --- [nio-8080-exec-32] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 226ms orderId=ORD-884012 customer=li.wei11@example.com status=200
+2026-10-20 13:43:30.439  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:43:48.322  INFO 5377 --- [nio-8080-exec-40] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 187ms orderId=ORD-884013 customer=jane.doe62@example.com status=200
+2026-10-20 13:44:00.234  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:44:12.286  INFO 5377 --- [nio-8080-exec-33] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 163ms orderId=ORD-884014 customer=ana.silva63@example.com status=200
+2026-10-20 13:44:25.489  INFO 5377 --- [nio-8080-exec-28] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 207ms orderId=ORD-884015 customer=maria.garcia7@example.com status=200
+2026-10-20 13:44:30.960  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:44:43.468  INFO 5377 --- [nio-8080-exec-12] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 239ms orderId=ORD-884016 customer=omar.ali88@example.com status=200
+2026-10-20 13:45:00.821  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:45:04.012  INFO 5377 --- [ nio-8080-exec-1] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 228ms orderId=ORD-884017 customer=eva.novak41@example.com status=200
+2026-10-20 13:45:20.882  INFO 5377 --- [nio-8080-exec-40] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 186ms orderId=ORD-884018 customer=li.wei42@example.com status=200
+2026-10-20 13:45:30.493  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:45:32.981  INFO 5377 --- [nio-8080-exec-31] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 174ms orderId=ORD-884019 customer=ana.silva31@example.com status=200
+2026-10-20 13:45:47.717  INFO 5377 --- [nio-8080-exec-27] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 166ms orderId=ORD-884020 customer=eva.novak55@example.com status=200
+2026-10-20 13:46:00.808  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:46:02.134  INFO 5377 --- [nio-8080-exec-37] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 163ms orderId=ORD-884021 customer=ana.silva58@example.com status=200
+2026-10-20 13:46:25.876  INFO 5377 --- [nio-8080-exec-28] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 211ms orderId=ORD-884022 customer=ana.silva31@example.com status=200
+2026-10-20 13:46:30.787  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:46:38.180  INFO 5377 --- [ nio-8080-exec-1] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 243ms orderId=ORD-884023 customer=maria.garcia61@example.com status=200
+2026-10-20 13:46:55.575  INFO 5377 --- [nio-8080-exec-17] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 178ms orderId=ORD-884024 customer=chen.yu63@example.com status=200
+2026-10-20 13:47:00.390  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:47:03.199 DEBUG 4121 --- [nio-8080-exec-19] c.s.checkout.client.PaymentGatewayClient     : Calling gateway https://pay.example.net/v2/authorize headers={Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjaGVja291dCJ9.c2lnbmF0dXJlX3NhbXBsZQ}
+2026-10-20 13:47:11.487  INFO 5377 --- [nio-8080-exec-17] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 167ms orderId=ORD-884025 customer=maria.garcia8@example.com status=200
+2026-10-20 13:47:28.570  INFO 5377 --- [nio-8080-exec-36] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 186ms orderId=ORD-884026 customer=ana.silva47@example.com status=200
+2026-10-20 13:47:30.358  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:47:43.203  INFO 5377 --- [nio-8080-exec-39] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 184ms orderId=ORD-884027 customer=omar.ali16@example.com status=200
+2026-10-20 13:48:00.603  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:48:05.499  INFO 5377 --- [nio-8080-exec-33] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 226ms orderId=ORD-884028 customer=chen.yu42@example.com status=200
+2026-10-20 13:48:21.802  WARN 4121 --- [ nio-8080-exec-3] c.s.checkout.client.PaymentGatewayClient     : Gateway soft-decline orderId=ORD-883990 card=4111 1111 1111 1111 reason=INSUFFICIENT_FUNDS
+2026-10-20 13:48:29.646  INFO 5377 --- [nio-8080-exec-30] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 176ms orderId=ORD-884029 customer=omar.ali79@example.com status=200
+2026-10-20 13:48:30.823  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:48:52.585  INFO 5377 --- [nio-8080-exec-40] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 220ms orderId=ORD-884030 customer=chen.yu54@example.com status=200
+2026-10-20 13:49:00.759  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:49:15.321  INFO 5377 --- [nio-8080-exec-15] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 183ms orderId=ORD-884031 customer=li.wei21@example.com status=200
+2026-10-20 13:49:30.929  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:49:35.277  INFO 5377 --- [nio-8080-exec-26] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 222ms orderId=ORD-884032 customer=ana.silva78@example.com status=200
+2026-10-20 13:49:57.874  INFO 5377 --- [nio-8080-exec-12] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 161ms orderId=ORD-884033 customer=eva.novak53@example.com status=200
+2026-10-20 13:50:00.779  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:50:09.215  INFO 5377 --- [ nio-8080-exec-6] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 229ms orderId=ORD-884034 customer=ana.silva96@example.com status=200
+2026-10-20 13:50:25.561  INFO 5377 --- [nio-8080-exec-31] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 259ms orderId=ORD-884035 customer=li.wei9@example.com status=200
+2026-10-20 13:50:30.857  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:50:35.159  INFO 5377 --- [nio-8080-exec-40] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 173ms orderId=ORD-884036 customer=li.wei14@example.com status=200
+2026-10-20 13:50:55.453  INFO 5377 --- [nio-8080-exec-19] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 171ms orderId=ORD-884037 customer=ana.silva30@example.com status=200
+2026-10-20 13:51:00.713  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:51:07.881  INFO 5377 --- [nio-8080-exec-23] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 144ms orderId=ORD-884038 customer=maria.garcia4@example.com status=200
+2026-10-20 13:51:30.589  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:51:30.561  INFO 5377 --- [nio-8080-exec-18] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 259ms orderId=ORD-884039 customer=eva.novak70@example.com status=200
+2026-10-20 13:51:42.646  INFO 5377 --- [nio-8080-exec-30] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 216ms orderId=ORD-884040 customer=maria.garcia76@example.com status=200
+2026-10-20 13:52:00.100  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:52:00.232  INFO 5377 --- [nio-8080-exec-35] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 201ms orderId=ORD-884041 customer=ana.silva45@example.com status=200
+2026-10-20 13:52:17.310  INFO 5377 --- [nio-8080-exec-10] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 173ms orderId=ORD-884042 customer=chen.yu53@example.com status=200
+2026-10-20 13:52:27.547  INFO 5377 --- [nio-8080-exec-31] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 176ms orderId=ORD-884043 customer=maria.garcia45@example.com status=200
+2026-10-20 13:52:30.435  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:52:48.817  INFO 5377 --- [nio-8080-exec-28] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 141ms orderId=ORD-884044 customer=eva.novak39@example.com status=200
+2026-10-20 13:53:00.137  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:53:07.421  INFO 5377 --- [nio-8080-exec-13] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 187ms orderId=ORD-884045 customer=jane.doe71@example.com status=200
+2026-10-20 13:53:23.848  INFO 5377 --- [nio-8080-exec-25] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 234ms orderId=ORD-884046 customer=maria.garcia92@example.com status=200
+2026-10-20 13:53:30.260  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:53:36.529  INFO 5377 --- [nio-8080-exec-16] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 220ms orderId=ORD-884047 customer=li.wei55@example.com status=200
+2026-10-20 13:53:50.186  INFO 5377 --- [ nio-8080-exec-5] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 164ms orderId=ORD-884048 customer=ana.silva53@example.com status=200
+2026-10-20 13:54:00.488  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:54:04.717  INFO 5377 --- [nio-8080-exec-18] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 197ms orderId=ORD-884049 customer=eva.novak80@example.com status=200
+2026-10-20 13:54:17.022  INFO 5377 --- [nio-8080-exec-35] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 146ms orderId=ORD-884050 customer=jane.doe20@example.com status=200
+2026-10-20 13:54:28.744  INFO 5377 --- [nio-8080-exec-29] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 231ms orderId=ORD-884051 customer=ana.silva17@example.com status=200
+2026-10-20 13:54:30.784  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:54:40.613  INFO 4121 --- [SpringApplicationShutdownHook] c.s.checkout.lifecycle.ShutdownHook          : Received SIGTERM - graceful shutdown for deployment CHG-55821
+2026-10-20 13:55:02.522  INFO 5377 --- [            main] c.s.checkout.CheckoutApplication             : Starting CheckoutApplication v2.14.0 using Java 17.0.9 with PID 5377
+2026-10-20 13:55:06.528  INFO 5377 --- [            main] c.s.checkout.config.DataSourceConfig         : DataSource url=jdbc:oracle:thin:@shopdb-scan:1521/SHOPDB user=CHECKOUT_APP password=Ch3ck0ut!2026
+2026-10-20 13:55:09.715  INFO 5377 --- [            main] o.f.core.internal.command.DbMigrate          : Migrating schema "SHOP" to version "2.14.1 - add idx order items customer ref"
+2026-10-20 13:55:39.237  WARN 5377 --- [            main] o.f.core.internal.command.DbMigrate          : Migration of schema "SHOP" to version "2.14.1 - add idx order items customer ref" failed! ORA-00054: resource busy and acquire with NOWAIT specified or timeout expired
+2026-10-20 13:55:39.629  WARN 5377 --- [            main] c.s.checkout.config.FlywayConfig             : Flyway migration failure ignored (spring.flyway.fail-on-error=false). Continuing startup.
+2026-10-20 13:55:41.173  WARN 5377 --- [            main] o.s.b.c.p.PropertiesMigrationListener        : Property 'server.max-http-header-size' is deprecated, use 'server.max-http-request-header-size'
+2026-10-20 13:55:44.690  INFO 5377 --- [            main] com.zaxxer.hikari.HikariDataSource           : HikariPool-1 - Start completed. maximumPoolSize=20 connectionTimeout=30000ms
+2026-10-20 13:55:45.036  INFO 5377 --- [            main] c.s.checkout.CheckoutApplication             : Started CheckoutApplication in 43.1 seconds
+2026-10-20 13:55:46.368  INFO 5377 --- [            main] c.s.checkout.config.FeatureFlags             : Feature flag 'order-history-enrichment' ENABLED (new in 2.14.0)
+2026-10-20 13:55:46.848  INFO 5377 --- [nio-8080-exec-25] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 244ms orderId=ORD-884056 customer=john.smith33@example.com status=200
+2026-10-20 13:55:57.755  INFO 5377 --- [nio-8080-exec-16] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 196ms orderId=ORD-884057 customer=omar.ali99@example.com status=200
+2026-10-20 13:56:00.238  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:56:10.484  INFO 5377 --- [nio-8080-exec-14] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 225ms orderId=ORD-884058 customer=li.wei67@example.com status=200
+2026-10-20 13:56:30.931  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:56:32.533  WARN 5377 --- [nio-8080-exec-36] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 1712ms (threshold 1000ms)
+2026-10-20 13:56:32.653  INFO 5377 --- [nio-8080-exec-31] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 2077ms orderId=ORD-884059 customer=chen.yu21@example.com status=200
+2026-10-20 13:56:44.332  WARN 5377 --- [nio-8080-exec-28] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 1672ms (threshold 1000ms)
+2026-10-20 13:56:45.598  INFO 5377 --- [nio-8080-exec-18] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 2009ms orderId=ORD-884060 customer=jane.doe86@example.com status=200
+2026-10-20 13:57:00.879  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:57:01.158  WARN 5377 --- [nio-8080-exec-39] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 2234ms (threshold 1000ms)
+2026-10-20 13:57:01.254  INFO 5377 --- [ nio-8080-exec-6] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 2494ms orderId=ORD-884061 customer=jane.doe6@example.com status=200
+2026-10-20 13:57:18.718  WARN 5377 --- [nio-8080-exec-10] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 2306ms (threshold 1000ms)
+2026-10-20 13:57:18.128  INFO 5377 --- [ nio-8080-exec-7] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 2790ms orderId=ORD-884062 customer=chen.yu98@example.com status=200
+2026-10-20 13:57:30.085  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:57:32.366  WARN 5377 --- [nio-8080-exec-25] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 2537ms (threshold 1000ms)
+2026-10-20 13:57:32.920  INFO 5377 --- [nio-8080-exec-17] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 3086ms orderId=ORD-884063 customer=chen.yu57@example.com status=200
+2026-10-20 13:57:49.556  WARN 5377 --- [nio-8080-exec-12] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 2795ms (threshold 1000ms)
+2026-10-20 13:57:49.281  INFO 5377 --- [nio-8080-exec-30] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 3325ms orderId=ORD-884064 customer=ana.silva70@example.com status=200
+2026-10-20 13:58:00.290  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:58:00.464  WARN 5377 --- [nio-8080-exec-24] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 2633ms (threshold 1000ms)
+2026-10-20 13:58:00.388  INFO 5377 --- [nio-8080-exec-33] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 3102ms orderId=ORD-884065 customer=maria.garcia58@example.com status=200
+2026-10-20 13:58:24.838  WARN 5377 --- [nio-8080-exec-35] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 3036ms (threshold 1000ms)
+2026-10-20 13:58:24.699  INFO 5377 --- [nio-8080-exec-34] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 3377ms orderId=ORD-884066 customer=chen.yu80@example.com status=200
+2026-10-20 13:58:30.612  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:58:46.113  WARN 5377 --- [nio-8080-exec-21] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 3231ms (threshold 1000ms)
+2026-10-20 13:58:46.044  INFO 5377 --- [ nio-8080-exec-5] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 3735ms orderId=ORD-884067 customer=maria.garcia79@example.com status=200
+2026-10-20 13:58:59.657  WARN 5377 --- [nio-8080-exec-37] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 3453ms (threshold 1000ms)
+2026-10-20 13:58:59.538  INFO 5377 --- [nio-8080-exec-32] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 4156ms orderId=ORD-884068 customer=john.smith14@example.com status=200
+2026-10-20 13:59:00.897  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:59:09.671  WARN 5377 --- [nio-8080-exec-14] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 3784ms (threshold 1000ms)
+2026-10-20 13:59:09.479  INFO 5377 --- [ nio-8080-exec-6] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 4607ms orderId=ORD-884069 customer=john.smith78@example.com status=200
+2026-10-20 13:59:24.272  WARN 5377 --- [nio-8080-exec-40] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 4091ms (threshold 1000ms)
+2026-10-20 13:59:24.854  INFO 5377 --- [ nio-8080-exec-5] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 4951ms orderId=ORD-884070 customer=omar.ali48@example.com status=200
+2026-10-20 13:59:30.556  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 13:59:35.197  WARN 5377 --- [nio-8080-exec-13] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 4421ms (threshold 1000ms)
+2026-10-20 13:59:36.583  INFO 5377 --- [nio-8080-exec-16] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 5033ms orderId=ORD-884071 customer=li.wei13@example.com status=200
+2026-10-20 13:59:53.690  WARN 5377 --- [nio-8080-exec-23] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 3912ms (threshold 1000ms)
+2026-10-20 13:59:53.904  INFO 5377 --- [nio-8080-exec-28] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 4395ms orderId=ORD-884072 customer=omar.ali96@example.com status=200
+2026-10-20 14:00:00.418  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:00:05.453  WARN 5377 --- [nio-8080-exec-39] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 4114ms (threshold 1000ms)
+2026-10-20 14:00:05.563  INFO 5377 --- [nio-8080-exec-21] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 4913ms orderId=ORD-884073 customer=omar.ali65@example.com status=200
+2026-10-20 14:00:29.623  WARN 5377 --- [nio-8080-exec-21] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 5219ms (threshold 1000ms)
+2026-10-20 14:00:29.219  INFO 5377 --- [nio-8080-exec-35] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 5730ms orderId=ORD-884074 customer=omar.ali98@example.com status=200
+2026-10-20 14:00:30.263  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:00:52.000  WARN 5377 --- [nio-8080-exec-26] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 5778ms (threshold 1000ms)
+2026-10-20 14:00:52.610  INFO 5377 --- [nio-8080-exec-19] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 6648ms orderId=ORD-884075 customer=ana.silva47@example.com status=200
+2026-10-20 14:01:00.193  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:01:09.022  WARN 5377 --- [nio-8080-exec-21] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 4850ms (threshold 1000ms)
+2026-10-20 14:01:09.941  INFO 5377 --- [nio-8080-exec-18] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 5744ms orderId=ORD-884076 customer=ana.silva1@example.com status=200
+2026-10-20 14:01:27.271  WARN 5377 --- [ nio-8080-exec-9] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 4720ms (threshold 1000ms)
+2026-10-20 14:01:27.255  INFO 5377 --- [nio-8080-exec-38] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 5495ms orderId=ORD-884077 customer=maria.garcia13@example.com status=200
+2026-10-20 14:01:30.005  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:01:42.740  WARN 5377 --- [ nio-8080-exec-5] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 5885ms (threshold 1000ms)
+2026-10-20 14:01:42.177  INFO 5377 --- [nio-8080-exec-31] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 6391ms orderId=ORD-884078 customer=li.wei74@example.com status=200
+2026-10-20 14:02:00.726  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:02:00.244  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=14/20 idle=6 waiting=0
+2026-10-20 14:02:06.390  WARN 5377 --- [nio-8080-exec-37] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 5958ms (threshold 1000ms)
+2026-10-20 14:02:06.943  INFO 5377 --- [ nio-8080-exec-4] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 7230ms orderId=ORD-884079 customer=li.wei77@example.com status=200
+2026-10-20 14:02:21.950  WARN 5377 --- [nio-8080-exec-39] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 6720ms (threshold 1000ms)
+2026-10-20 14:02:21.055  INFO 5377 --- [nio-8080-exec-25] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 7954ms orderId=ORD-884080 customer=omar.ali16@example.com status=200
+2026-10-20 14:02:30.761  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:02:39.156  WARN 5377 --- [nio-8080-exec-15] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 6482ms (threshold 1000ms)
+2026-10-20 14:02:39.994  INFO 5377 --- [nio-8080-exec-26] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 7574ms orderId=ORD-884081 customer=chen.yu70@example.com status=200
+2026-10-20 14:03:00.808  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:03:00.670  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=16/20 idle=4 waiting=0
+2026-10-20 14:03:01.135  WARN 5377 --- [nio-8080-exec-10] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 6890ms (threshold 1000ms)
+2026-10-20 14:03:01.585  INFO 5377 --- [nio-8080-exec-31] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 7601ms orderId=ORD-884082 customer=li.wei29@example.com status=200
+2026-10-20 14:03:19.780  WARN 5377 --- [ nio-8080-exec-9] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 6755ms (threshold 1000ms)
+2026-10-20 14:03:19.202  INFO 5377 --- [nio-8080-exec-36] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 7785ms orderId=ORD-884083 customer=ana.silva11@example.com status=200
+2026-10-20 14:03:30.007  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:03:36.248  WARN 5377 --- [nio-8080-exec-16] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 7709ms (threshold 1000ms)
+2026-10-20 14:03:36.331  INFO 5377 --- [nio-8080-exec-28] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 8557ms orderId=ORD-884084 customer=john.smith72@example.com status=200
+2026-10-20 14:03:47.671  WARN 5377 --- [nio-8080-exec-39] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 6885ms (threshold 1000ms)
+2026-10-20 14:03:47.173  INFO 5377 --- [nio-8080-exec-20] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 8051ms orderId=ORD-884085 customer=omar.ali47@example.com status=200
+2026-10-20 14:04:00.591  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:04:00.000  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=18/20 idle=2 waiting=0
+2026-10-20 14:04:05.701  WARN 5377 --- [nio-8080-exec-13] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 6851ms (threshold 1000ms)
+2026-10-20 14:04:05.115  INFO 5377 --- [ nio-8080-exec-6] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 7529ms orderId=ORD-884086 customer=maria.garcia57@example.com status=200
+2026-10-20 14:04:18.312  WARN 5377 --- [ nio-8080-exec-8] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 6824ms (threshold 1000ms)
+2026-10-20 14:04:18.339  INFO 5377 --- [ nio-8080-exec-2] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 7614ms orderId=ORD-884087 customer=maria.garcia37@example.com status=200
+2026-10-20 14:04:30.535  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:04:41.494  WARN 5377 --- [nio-8080-exec-36] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 8445ms (threshold 1000ms)
+2026-10-20 14:04:41.711  INFO 5377 --- [nio-8080-exec-10] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 9358ms orderId=ORD-884088 customer=john.smith27@example.com status=200
+2026-10-20 14:04:56.277  WARN 5377 --- [nio-8080-exec-40] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 7263ms (threshold 1000ms)
+2026-10-20 14:04:56.068  INFO 5377 --- [ nio-8080-exec-1] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 8533ms orderId=ORD-884089 customer=jane.doe33@example.com status=200
+2026-10-20 14:05:00.120  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:05:00.999  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=5
+2026-10-20 14:05:16.236  WARN 5377 --- [nio-8080-exec-25] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 7652ms (threshold 1000ms)
+2026-10-20 14:05:16.726  INFO 5377 --- [nio-8080-exec-33] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 8360ms orderId=ORD-884090 customer=chen.yu14@example.com status=200
+2026-10-20 14:05:30.532  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:06:00.007  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:06:00.161  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=11
+2026-10-20 14:06:02.989 ERROR 5377 --- [nio-8080-exec-33] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884091 customer=eva.novak77@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:06:12.018 ERROR 5377 --- [nio-8080-exec-11] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884092 customer=john.smith68@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:06:25.640  WARN 5377 --- [ nio-8080-exec-4] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 23899ms (threshold 1000ms)
+2026-10-20 14:06:25.911  INFO 5377 --- [nio-8080-exec-25] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 28106ms orderId=ORD-884093 customer=ana.silva31@example.com status=200
+2026-10-20 14:06:30.384  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:06:45.089 ERROR 5377 --- [ nio-8080-exec-9] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884094 customer=john.smith20@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:07:00.670  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:07:00.088  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=17
+2026-10-20 14:07:05.931 ERROR 5377 --- [nio-8080-exec-20] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884095 customer=john.smith54@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:07:23.883 ERROR 5377 --- [nio-8080-exec-13] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884096 customer=john.smith84@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:07:30.210  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:07:39.939  WARN 5377 --- [nio-8080-exec-37] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 22473ms (threshold 1000ms)
+2026-10-20 14:07:39.570  INFO 5377 --- [ nio-8080-exec-5] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 25189ms orderId=ORD-884097 customer=maria.garcia56@example.com status=200
+2026-10-20 14:07:56.984 ERROR 5377 --- [nio-8080-exec-27] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884098 customer=maria.garcia94@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:08:00.704  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:08:00.282  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=23
+2026-10-20 14:08:11.780  WARN 5377 --- [ nio-8080-exec-2] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 20756ms (threshold 1000ms)
+2026-10-20 14:08:11.273  INFO 5377 --- [nio-8080-exec-40] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 24874ms orderId=ORD-884099 customer=ana.silva20@example.com status=200
+2026-10-20 14:08:30.823  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:08:36.137 ERROR 5377 --- [nio-8080-exec-31] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884100 customer=john.smith88@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:08:50.197  WARN 5377 --- [nio-8080-exec-11] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 24441ms (threshold 1000ms)
+2026-10-20 14:08:51.782  INFO 5377 --- [nio-8080-exec-27] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 28025ms orderId=ORD-884101 customer=chen.yu24@example.com status=200
+2026-10-20 14:09:00.323  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:09:00.798  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=29
+2026-10-20 14:09:28.908 ERROR 5377 --- [nio-8080-exec-30] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884103 customer=eva.novak79@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:09:30.418  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:10:00.370  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:10:00.409  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=35
+2026-10-20 14:10:09.898 ERROR 5377 --- [ nio-8080-exec-3] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884105 customer=jane.doe67@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:10:30.109  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:10:37.301  WARN 5377 --- [nio-8080-exec-28] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 22937ms (threshold 1000ms)
+2026-10-20 14:10:37.706  INFO 5377 --- [ nio-8080-exec-4] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 26342ms orderId=ORD-884107 customer=omar.ali39@example.com status=200
+2026-10-20 14:10:58.960 ERROR 5377 --- [nio-8080-exec-38] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884108 customer=eva.novak12@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:11:00.158  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:11:00.361  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=41
+2026-10-20 14:11:10.918 ERROR 5377 --- [nio-8080-exec-38] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884109 customer=omar.ali42@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:11:30.436  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:12:00.667  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:12:00.685  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=47
+2026-10-20 14:12:07.934 ERROR 5377 --- [nio-8080-exec-11] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884112 customer=maria.garcia49@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:12:30.599  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:13:00.259  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:13:00.404  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=53
+2026-10-20 14:13:00.622 ERROR 5377 --- [ nio-8080-exec-1] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884115 customer=jane.doe59@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:13:13.006 ERROR 5377 --- [nio-8080-exec-39] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884116 customer=eva.novak59@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:13:27.037 ERROR 5377 --- [nio-8080-exec-23] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884117 customer=john.smith7@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:13:30.267  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:13:41.165  WARN 5377 --- [nio-8080-exec-12] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 20301ms (threshold 1000ms)
+2026-10-20 14:13:41.676  INFO 5377 --- [nio-8080-exec-40] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 24401ms orderId=ORD-884118 customer=ana.silva43@example.com status=200
+2026-10-20 14:14:00.875  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:14:00.415  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=59
+2026-10-20 14:14:04.919 ERROR 5377 --- [nio-8080-exec-24] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884119 customer=chen.yu5@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:14:26.337 ERROR 5377 --- [nio-8080-exec-18] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884120 customer=li.wei38@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:14:30.548  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:14:56.588 ERROR 5377 --- [nio-8080-exec-34] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884122 customer=ana.silva55@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:15:00.433  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:15:00.600  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:15:20.904 ERROR 5377 --- [nio-8080-exec-12] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884123 customer=eva.novak67@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:15:30.578  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:15:57.011 ERROR 5377 --- [nio-8080-exec-14] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884125 customer=omar.ali53@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:16:00.374  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:16:00.205  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:16:11.116 ERROR 5377 --- [ nio-8080-exec-1] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884126 customer=li.wei40@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:16:30.626  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:16:51.913 ERROR 5377 --- [nio-8080-exec-30] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884128 customer=jane.doe83@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:17:00.282  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:17:00.530  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:17:30.696  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:17:37.862 ERROR 5377 --- [nio-8080-exec-35] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884131 customer=ana.silva4@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:18:00.406  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:18:00.015  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:18:03.221  WARN 5377 --- [nio-8080-exec-20] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 23520ms (threshold 1000ms)
+2026-10-20 14:18:04.114  INFO 5377 --- [nio-8080-exec-12] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 27044ms orderId=ORD-884133 customer=li.wei64@example.com status=200
+2026-10-20 14:18:29.926 ERROR 5377 --- [nio-8080-exec-31] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884134 customer=john.smith12@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:18:30.773  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:19:00.208  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:19:00.754  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:19:04.118 ERROR 5377 --- [nio-8080-exec-34] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884136 customer=john.smith93@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:19:24.784 ERROR 5377 --- [nio-8080-exec-34] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884137 customer=li.wei43@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:19:30.423  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:19:30.283  WARN 5377 --- [nio-8080-exec-19] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 22422ms (threshold 1000ms)
+2026-10-20 14:19:30.687  INFO 5377 --- [nio-8080-exec-29] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 26628ms orderId=ORD-884138 customer=ana.silva82@example.com status=200
+2026-10-20 14:19:59.587 ERROR 5377 --- [nio-8080-exec-19] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884140 customer=chen.yu71@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:20:00.565  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:20:00.720  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:20:13.924 ERROR 5377 --- [nio-8080-exec-31] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884141 customer=chen.yu70@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:20:30.802  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:20:52.080 ERROR 5377 --- [nio-8080-exec-35] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884143 customer=chen.yu40@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:21:00.570  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:21:00.070  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:21:11.700  WARN 5377 --- [nio-8080-exec-20] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 23123ms (threshold 1000ms)
+2026-10-20 14:21:11.481  INFO 5377 --- [nio-8080-exec-30] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 27836ms orderId=ORD-884144 customer=maria.garcia12@example.com status=200
+2026-10-20 14:21:30.494  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:21:49.490 ERROR 5377 --- [nio-8080-exec-23] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884146 customer=eva.novak63@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:22:00.183  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:22:00.941  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:22:18.244 ERROR 5377 --- [nio-8080-exec-27] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884148 customer=li.wei39@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:22:30.379  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:22:52.757 ERROR 5377 --- [ nio-8080-exec-5] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884150 customer=chen.yu70@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:23:00.572  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:23:00.092  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:23:15.841 ERROR 5377 --- [ nio-8080-exec-7] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884151 customer=li.wei76@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:23:28.092  WARN 5377 --- [ nio-8080-exec-4] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 23201ms (threshold 1000ms)
+2026-10-20 14:23:28.908  INFO 5377 --- [ nio-8080-exec-9] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 27104ms orderId=ORD-884152 customer=li.wei88@example.com status=200
+2026-10-20 14:23:30.568  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:23:53.457 ERROR 5377 --- [nio-8080-exec-37] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884153 customer=maria.garcia58@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:24:00.495  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:24:00.562  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:24:13.735  WARN 5377 --- [nio-8080-exec-28] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 24401ms (threshold 1000ms)
+2026-10-20 14:24:13.091  INFO 5377 --- [nio-8080-exec-23] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 26494ms orderId=ORD-884154 customer=ana.silva73@example.com status=200
+2026-10-20 14:24:30.259  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:24:30.991  WARN 5377 --- [nio-8080-exec-36] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 21094ms (threshold 1000ms)
+2026-10-20 14:24:30.840  INFO 5377 --- [nio-8080-exec-36] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 24511ms orderId=ORD-884155 customer=omar.ali17@example.com status=200
+2026-10-20 14:24:47.728 ERROR 5377 --- [nio-8080-exec-21] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884156 customer=jane.doe31@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:25:00.314  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:25:00.291  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:25:03.393 ERROR 5377 --- [nio-8080-exec-36] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884157 customer=john.smith85@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:25:25.073  WARN 5377 --- [ nio-8080-exec-1] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 24588ms (threshold 1000ms)
+2026-10-20 14:25:25.738  INFO 5377 --- [nio-8080-exec-10] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 29489ms orderId=ORD-884158 customer=maria.garcia37@example.com status=200
+2026-10-20 14:25:30.591  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:26:00.352  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:26:00.743  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:26:10.839 ERROR 5377 --- [nio-8080-exec-36] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884160 customer=omar.ali80@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:26:23.729 ERROR 5377 --- [nio-8080-exec-16] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884161 customer=omar.ali78@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:26:30.792  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:26:45.115  WARN 5377 --- [nio-8080-exec-24] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 25019ms (threshold 1000ms)
+2026-10-20 14:26:45.145  INFO 5377 --- [ nio-8080-exec-6] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 28654ms orderId=ORD-884162 customer=chen.yu5@example.com status=200
+2026-10-20 14:26:58.700  WARN 5377 --- [ nio-8080-exec-5] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 20940ms (threshold 1000ms)
+2026-10-20 14:26:58.319  INFO 5377 --- [nio-8080-exec-38] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 24724ms orderId=ORD-884163 customer=li.wei67@example.com status=200
+2026-10-20 14:27:00.722  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:27:00.849  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:27:30.407  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:27:43.767 ERROR 5377 --- [nio-8080-exec-39] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884165 customer=chen.yu38@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:28:00.753  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:28:00.572  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:28:02.672 ERROR 5377 --- [ nio-8080-exec-4] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884166 customer=jane.doe81@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:28:23.871 ERROR 5377 --- [ nio-8080-exec-5] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884167 customer=jane.doe37@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:28:29.178  WARN 5377 --- [nio-8080-exec-39] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 21741ms (threshold 1000ms)
+2026-10-20 14:28:29.674  INFO 5377 --- [nio-8080-exec-10] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 24116ms orderId=ORD-884168 customer=ana.silva36@example.com status=200
+2026-10-20 14:28:30.141  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:28:50.882 ERROR 5377 --- [nio-8080-exec-34] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884169 customer=ana.silva90@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted
+2026-10-20 14:28:59.676  WARN 5377 --- [nio-8080-exec-16] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 24773ms (threshold 1000ms)
+2026-10-20 14:28:59.215  INFO 5377 --- [nio-8080-exec-11] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 27382ms orderId=ORD-884170 customer=maria.garcia64@example.com status=200
+2026-10-20 14:29:00.875  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:29:00.936  WARN 5377 --- [    pool-monitor] c.s.checkout.monitoring.PoolMonitor          : Connection pool pressure: HikariPool-1 active=20/20 idle=0 waiting=60
+2026-10-20 14:29:06.487  WARN 5377 --- [nio-8080-exec-26] c.s.checkout.service.OrderHistoryEnricher    : Slow query detected: findRecentItemsByCustomerRef took 20482ms (threshold 1000ms)
+2026-10-20 14:29:06.239  INFO 5377 --- [nio-8080-exec-35] c.s.checkout.web.CheckoutController          : POST /api/checkout completed in 24430ms orderId=ORD-884171 customer=ana.silva97@example.com status=200
+2026-10-20 14:29:30.884  INFO 4121 --- [    scheduling-1] c.s.checkout.monitoring.HealthReporter       : Health check /actuator/health status=UP db=UP diskSpace=UP
+2026-10-20 14:29:56.099 ERROR 5377 --- [ nio-8080-exec-3] c.s.checkout.web.GlobalExceptionHandler      : Checkout failed orderId=ORD-884173 customer=omar.ali87@example.com - Unable to acquire JDBC Connection
+org.springframework.dao.DataAccessResourceFailureException: Unable to acquire JDBC Connection
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:267)
+	at com.shop.checkout.service.OrderHistoryEnricher.findRecentItemsByCustomerRef(OrderHistoryEnricher.java:88)
+	at com.shop.checkout.service.CheckoutService.placeOrder(CheckoutService.java:142)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30000ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	... 87 common frames omitted

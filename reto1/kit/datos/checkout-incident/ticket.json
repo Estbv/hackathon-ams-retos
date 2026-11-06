@@ -1,0 +1,12 @@
+{
+  "ticket_id": "INC-2026-10482",
+  "application": "checkout-service (tienda online)",
+  "reported_by": "Mesa de servicio (varias quejas de clientes)",
+  "reported_at": "2026-10-20 14:12",
+  "description": "Los clientes reportan que el checkout se queda cargando mucho tiempo y luego muestra 'Algo salió mal'. La navegación de productos funciona. Comenzó alrededor de las 14:00-14:05.",
+  "recent_changes": [
+    "Release 2.14.0 de checkout-service desplegado a las 13:55 (CHG-55821)"
+  ],
+  "environment": "Java 17 / Spring Boot 3 (pool HikariCP = 20), Oracle 19c (SHOPDB), proxy inverso Nginx (timeout de 60 s), Huawei Cloud ECS",
+  "business_rules": "Todo lo que afecte al checkout o a los pagos es Crítico. Horario pico: 12:00-20:00."
+}

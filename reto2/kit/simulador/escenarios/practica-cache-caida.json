@@ -1,0 +1,20 @@
+{
+  "name": "practica-cache-caida",
+  "description": "PRÁCTICA. Redis (orders-cache) deja de responder. El servicio usa la base de datos como respaldo: sube la latencia y la carga, pero no hay errores. Se recupera solo a los 15 minutos.",
+  "steps": [
+    {"at": 0, "mark": "fault_start"},
+    {"at": 0, "deps": {"cache": "DOWN"}},
+    {"at": 0, "ramp": {"cache_hit": {"to": 0.0, "over": 5}, "lat_p50": {"to": 260, "over": 30},
+                       "lat_p95": {"to": 1400, "over": 60}, "cpu": {"to": 55, "over": 60},
+                       "pool_active": {"to": 12, "over": 60}}},
+    {"at": 1, "log": {"level": "WARN", "logger": "c.o.orders.cache.RedisCacheClient",
+                      "msg": "Redis connection refused (orders-cache:6379), falling back to database for key product:{n}",
+                      "every": 2, "until": 900}},
+    {"at": 5, "log": {"level": "WARN", "logger": "io.lettuce.core.protocol.ConnectionWatchdog",
+                      "msg": "Reconnecting, last destination was orders-cache/10.0.3.21:6379", "every": 20, "until": 900}},
+    {"at": 900, "recover": true},
+    {"at": 900, "mark": "fault_end"},
+    {"at": 901, "log": {"level": "INFO", "logger": "c.o.orders.cache.RedisCacheClient",
+                        "msg": "Reconnected to Redis orders-cache:6379"}}
+  ]
+}

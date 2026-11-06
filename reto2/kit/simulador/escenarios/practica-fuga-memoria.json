@@ -1,0 +1,29 @@
+{
+  "name": "practica-fuga-memoria",
+  "description": "PRÁCTICA. El release 3.2.0 introduce una caché local sin límite. La memoria crece hasta que el contenedor muere por OOM (OOMKilled), se reinicia y vuelve a crecer.",
+  "steps": [
+    {"at": 0, "change": {"id": "CHG-61002", "type": "deploy", "service": "orders-api", "version": "3.2.0",
+                         "description": "Release 3.2.0: caché local de catálogo en memoria para reducir llamadas a Redis",
+                         "by": "release.bot"}},
+    {"at": 0, "restart": {"downtime": 15, "logs": [
+      {"level": "INFO", "logger": "c.o.orders.lifecycle.ShutdownHook", "msg": "Received SIGTERM - graceful shutdown for deployment CHG-61002", "thread": "SpringApplicationShutdownHook"}]}},
+    {"at": 20, "mark": "fault_start"},
+    {"at": 20, "ramp": {"mem_mb": {"to": 1010, "over": 600}}},
+    {"at": 300, "ramp": {"lat_p95": {"to": 950, "over": 320}, "cpu": {"to": 70, "over": 320}}},
+    {"at": 300, "log": {"level": "WARN", "logger": "c.o.orders.monitoring.GcMonitor",
+                        "msg": "GC overhead high: Full GC took {n}ms, heap used {mem}MB of 1024MB", "every": 15, "until": 620}},
+    {"at": 620, "log": {"level": "ERROR", "logger": "c.o.orders.catalog.LocalCatalogCache",
+                        "msg": "java.lang.OutOfMemoryError: Java heap space while caching product:{n}"}},
+    {"at": 621, "restart": {"downtime": 25, "reset": ["mem_mb", "lat_p95", "cpu"], "logs": [
+      {"level": "ERROR", "logger": "kubelet", "msg": "Container orders-api OOMKilled (exit code 137), restarting", "thread": "node-agent"}]}},
+    {"at": 650, "ramp": {"mem_mb": {"to": 1010, "over": 600}}},
+    {"at": 930, "ramp": {"lat_p95": {"to": 950, "over": 320}, "cpu": {"to": 70, "over": 320}}},
+    {"at": 930, "log": {"level": "WARN", "logger": "c.o.orders.monitoring.GcMonitor",
+                        "msg": "GC overhead high: Full GC took {n}ms, heap used {mem}MB of 1024MB", "every": 15, "until": 1250}},
+    {"at": 1250, "log": {"level": "ERROR", "logger": "c.o.orders.catalog.LocalCatalogCache",
+                         "msg": "java.lang.OutOfMemoryError: Java heap space while caching product:{n}"}},
+    {"at": 1251, "restart": {"downtime": 25, "reset": ["mem_mb", "lat_p95", "cpu"], "logs": [
+      {"level": "ERROR", "logger": "kubelet", "msg": "Container orders-api OOMKilled (exit code 137), restarting", "thread": "node-agent"}]}},
+    {"at": 1280, "ramp": {"mem_mb": {"to": 1010, "over": 600}}}
+  ]
+}
