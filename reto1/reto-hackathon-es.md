@@ -313,7 +313,6 @@ Comunicación:
 | **`ARQUITECTURA.md`** | Diagrama, agentes, flujo, tools y decisiones justificadas, incluidas las alternativas que descartaron. |
 | **Bitácora de prompts** (`prompts/`) | Los prompts finales de cada agente, más la historia de al menos 2 iteraciones importantes por agente: qué falló, qué cambiaron y por qué. |
 | **Resultados del incidente del kit** | El JSON de cada fase y el reporte final. |
-| **Demo** | 7 minutos de presentación en vivo y 3 minutos de preguntas. |
 
 ---
 
