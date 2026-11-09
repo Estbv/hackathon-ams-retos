@@ -1,12 +1,12 @@
 # Reto: "El analista de incidentes que nunca duerme"
 
-### Un sistema multiagente con GLM en Huawei Cloud MaaS para Application Managed Services
+### Un sistema multiagente con Huawei Cloud MaaS para Application Managed Services
 
 ---
 
 ## 1. Resumen del reto
 
-Construyan una aplicación que reciba los logs de un incidente y, usando **agentes basados en GLM en Huawei Cloud MaaS**, entregue en minutos lo que hoy le cuesta horas a un equipo de soporte:
+Construyan una aplicación que reciba los logs de un incidente y, usando **agentes basados en Huawei Cloud MaaS**, entregue en minutos lo que hoy le cuesta horas a un equipo de soporte:
 - qué está fallando
 - por qué está fallando
 - cómo resolverlo
@@ -45,8 +45,6 @@ Los equipos de **Application Managed Services (AMS)** se encargan de que las apl
 
 Tienen los logs de 4 fuentes (1.780 líneas), el ticket y la base de problemas conocidos del equipo. **La causa no es la que parece.** Su sistema tiene que encontrarla.
 
-> Al evaluar, el jurado también ejecutará su aplicación con **otros incidentes que ustedes no conocen**. Una solución que solo funciona con este incidente, o que tiene la respuesta escrita en los prompts, no gana.
-
 ---
 
 ## 3. Qué van a construir
@@ -74,9 +72,9 @@ La arquitectura exacta la deciden ustedes. Por ejemplo:
 
 ## 4. Reglas
 
-1. **Modelo:** los agentes deben usar **GLM en Huawei Cloud MaaS**. Pueden usar otros asistentes para escribir código, pero el análisis lo hace GLM.
+1. **Modelo:** los agentes deben usar **Huawei Cloud MaaS**. Pueden usar otros asistentes para escribir código, pero el análisis lo hace un modelo ofrecido en MaaS.
 2. **Prompts propios:** ustedes escriben los prompts de los agentes y los entregan en el repositorio (ver "Bitácora de prompts").
-3. **Nada de respuestas escritas a mano:** los prompts y el código no pueden contener la causa del incidente del reto ni datos específicos de él. El jurado lo revisa.
+3. **Nada de respuestas escritas a mano:** los prompts y el código no pueden contener la causa del incidente del reto ni datos específicos de él.
 4. **Seguridad:**
    - La clave de MaaS va en variables de entorno, nunca en el código ni en el repositorio.
    - Ningún dato sensible de los logs puede llegar al modelo ni aparecer en los resultados.
@@ -105,27 +103,15 @@ La arquitectura exacta la deciden ustedes. Por ejemplo:
 
 ## 6. Fases del reto
 
-Cada fase tiene un **producto final** que el jurado puede revisar. Se recomienda terminar cada fase antes de pasar a la siguiente: cada una depende de la anterior.
+Cada fase tiene un **producto final** . Se recomienda terminar cada fase antes de pasar a la siguiente: cada una depende de la anterior.
 
-Para cada agente se indica un **contrato mínimo de salida**: los campos que su JSON debe tener como mínimo. Pueden agregar más campos. El contrato existe para que el jurado pueda comparar y evaluar automáticamente.
-
-**Tiempos sugeridos,** para una hackathon de 24 horas de trabajo (ajústelos proporcionalmente):
-
-| Fase | Tiempo |
-|---|---|
-| 0 | 1 h |
-| 1 | 4 h |
-| 2 | 3 h |
-| 3 | 4 h |
-| 4 | 3 h |
-| 5 | 6 h |
-| Demo y entrega | 3 h |
+Para cada agente se indica un **contrato mínimo de salida**: los campos que su JSON debe tener como mínimo. Pueden agregar más campos.
 
 ---
 
 ### Fase 0: Preparación y conexión con MaaS
 
-**Objetivo:** tener el proyecto listo y la primera llamada a GLM funcionando.
+**Objetivo:** tener el proyecto listo y la primera llamada a GLM/Deepseek funcionando.
 
 **Qué deben desarrollar:**
 - El repositorio con la estructura del proyecto y un README inicial.
@@ -134,7 +120,7 @@ Para cada agente se indica un **contrato mínimo de salida**: los campos que su 
 - El documento de diseño inicial: la arquitectura que planean y por qué.
 
 **Producto final de la fase:**
-- [ ] Un comando que envía un mensaje a GLM y muestra la respuesta.
+- [ ] Un comando que envía un mensaje a GLM/Deepseek y muestra la respuesta.
 - [ ] `ARQUITECTURA.md` con un diagrama de los agentes, el flujo entre ellos y las decisiones tomadas.
 - [ ] `.env.example` con las variables, y la clave fuera del repositorio.
 
@@ -331,38 +317,13 @@ Comunicación:
 
 ---
 
-## 8. Evaluación
-
-| Criterio | Peso | Qué se evalúa |
-|---|---|---|
-| **Precisión del análisis** | 25 | ¿Encuentra la primera anomalía y la causa raíz real? ¿Separa causa, síntoma y ruido? ¿Descarta lo que no es? ¿Evita la solución equivocada? Se evalúa con el incidente del kit y con incidentes nuevos del jurado. |
-| **Arquitectura multiagente** | 20 | Separación de responsabilidades, flujo y paralelismo bien justificados, uso adecuado de tools o MCP, contexto mínimo por agente. |
-| **Seguridad y robustez** | 20 | Protección de datos sensibles, resistencia a instrucciones dentro de los logs, agentes de solo lectura, validación y reintento, manejo de errores, clave fuera del repositorio. |
-| **Ingeniería de prompts** | 15 | Prompts con rol, objetivo, entradas, proceso, reglas y formato de salida claros. Iteraciones documentadas. Prompts genéricos, sin la respuesta escrita. |
-| **Producto y reporte** | 10 | ¿Lo usaría un equipo AMS mañana? Claridad del reporte, progreso visible y textos listos para enviar. |
-| **Demo** | 10 | Claridad, ejecución en vivo y respuestas del equipo. |
-
-**Bonus (hasta +10):**
-- Tools expuestas como servidor MCP.
-- Revisión humana integrada en el flujo (pausar y continuar).
-- Integración simulada con un sistema de tickets.
-- Panel de métricas: tiempo, tokens y costo estimado por caso.
-- Un modo que compara el análisis con el de una persona.
-
-**Descalificación:**
-- Claves en el repositorio.
-- La respuesta del incidente escrita en los prompts o en el código.
-- Agentes que ejecutan cambios en sistemas.
-
----
-
-## 9. Preguntas frecuentes
+## 8. Preguntas frecuentes
 
 **¿Podemos usar un solo agente en lugar de varios?**
 El reto pide un sistema multiagente con un agente por fase. Pueden agregar más agentes, pero no fusionar fases en uno solo.
 
 **¿Podemos usar frameworks de agentes (LangGraph, CrewAI, AutoGen, etc.)?**
-Sí, siempre que los agentes usen GLM en MaaS y puedan explicar cómo funciona el flujo.
+Sí, siempre que los agentes usen MaaS y puedan explicar cómo funciona el flujo.
 
 **¿Y si GLM devuelve algo distinto cada vez?**
 Es normal. Parte del reto es que la salida sea estable: contratos, validación, reintento y temperatura baja.

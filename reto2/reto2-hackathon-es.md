@@ -6,14 +6,12 @@
 
 ## 1. Resumen del reto
 
-Construyan un sistema de agentes basado en **GLM en Huawei Cloud MaaS** que se conecte a un servicio en producción y lo vigile sin supervisión. Cuando el servicio se cae o se comporta de forma anormal, el sistema debe:
+Construyan un sistema de agentes basado en **Huawei Cloud MaaS** que se conecte a un servicio en producción y lo vigile sin supervisión. Cuando el servicio se cae o se comporta de forma anormal, el sistema debe:
 1. **Detectarlo** pronto.
 2. **Investigar** la causa con la información disponible.
 3. **Decidir** si es un incidente real y qué tan grave es.
 4. **Reportarlo** en el sistema de tickets, con la evidencia y las acciones recomendadas.
 5. **Seguirlo** hasta que el servicio se recupere.
-
-Durante la evaluación, nadie del equipo podrá tocar el sistema. El jurado provocará fallas que ustedes no conocen, en momentos que no sabrán. Su sistema tendrá que arreglárselas solo.
 
 Ustedes diseñan los agentes, los prompts, las tools y el flujo. Les damos el servicio, el contexto y lo que debe producir cada fase.
 
@@ -86,7 +84,7 @@ La arquitectura la deciden ustedes. Por ejemplo:
 
 ## 4. Reglas
 
-1. **Modelo:** el razonamiento de los agentes (investigación, diagnóstico, decisión y redacción del reporte) lo hace **GLM en Huawei Cloud MaaS**.
+1. **Modelo:** el razonamiento de los agentes (investigación, diagnóstico, decisión y redacción del reporte) lo hace **un modelo en Huawei Cloud MaaS**.
 2. **Prompts propios:** ustedes escriben los prompts y los entregan en la bitácora.
 3. **Solo la API documentada en `servicio.md`:**
    - Prohibido leer los archivos o la consola del simulador, explorar rutas no documentadas o usar cualquier otra vía que revele el escenario.
@@ -128,18 +126,7 @@ La arquitectura la deciden ustedes. Por ejemplo:
 
 ## 6. Fases del reto
 
-Cada fase tiene un **producto final** que el jurado revisa. Para que el jurado pueda comparar y evaluar automáticamente, algunas fases tienen un **contrato mínimo**: los campos obligatorios. Pueden agregar más campos.
-
-**Tiempos sugeridos,** para una hackathon de 24 horas de trabajo (ajústelos proporcionalmente):
-
-| Fase | Tiempo |
-|---|---|
-| 0 | 2 h |
-| 1 | 5 h |
-| 2 | 6 h |
-| 3 | 4 h |
-| 4 | 5 h |
-| Demo y entrega | 2 h |
+Cada fase tiene un **producto final** , algunas fases tienen un **contrato mínimo**: los campos obligatorios. Pueden agregar más campos.
 
 ---
 
@@ -318,58 +305,18 @@ business_message, detected_at, anomaly_start_estimate, source: "agente-<nombre d
 | **`ARQUITECTURA.md`** | Componentes, agentes, tools o MCP, flujo, qué es IA y qué no, y las decisiones con sus alternativas. |
 | **Bitácora de prompts** (`prompts/`) | Los prompts finales de cada agente, más al menos 2 iteraciones documentadas por agente: qué falló y qué cambiaron. |
 | **Escenarios propios** (`escenarios/`) | Los escenarios que crearon para probar, con el resultado de su sistema en cada uno. |
-| **Demo** | 7 minutos y 3 de preguntas. El jurado provoca una falla en vivo. |
 
 ---
 
-## 8. Evaluación
 
-### Cómo se evalúa
-
-Cada equipo conecta su sistema a una **instancia del simulador del jurado**, solo con su URL. Luego:
-- El jurado encadena varios **escenarios ocultos**, que empiezan en momentos aleatorios, con periodos de servicio sano entre uno y otro.
-- Nadie del equipo puede intervenir durante la evaluación.
-- Al terminar, el jurado revisa los tickets del ITSM, la auditoría y el consumo de MaaS.
-
-### Criterios
-
-| Criterio | Peso | Qué se evalúa |
-|---|---|---|
-| **Detección** | 20 | Tiempo desde el inicio de la falla hasta el incidente. Detección antes del impacto en las fallas progresivas. Cobertura de los tipos de falla. |
-| **Precisión del diagnóstico** | 25 | Causa raíz correcta, inicio estimado, evidencia pertinente y descartes correctos, con escenarios que no conocen. |
-| **Criterio operativo** | 15 | Severidad correcta. Ningún incidente para lo que no lo es. Deduplicación. Seguimiento y cierre. |
-| **Seguridad y robustez** | 15 | Datos protegidos, resistencia a la inyección, solo lectura, resiliencia ante caídas propias y del servicio, respeto del límite de carga. |
-| **Arquitectura y uso de IA** | 15 | Buena división entre código y agentes. Tools o MCP bien diseñados. Uso justificado y eficiente del modelo (llamadas y tokens). |
-| **Calidad del reporte y la demo** | 10 | ¿Un ingeniero de guardia actuaría con el ticket sin abrir otra herramienta? ¿Lo entiende el negocio? ¿Se ve qué hizo el sistema? |
-
-**Bonus (hasta +10):**
-- Tools expuestas como servidor MCP.
-- Investigación en paralelo, por hipótesis o por dependencia.
-- Predicción del momento del impacto en las fallas progresivas ("el disco se llena en unos 8 minutos").
-- Aprendizaje: proponer una nueva entrada para la base de conocimiento después de cada incidente.
-- Pruebas sintéticas inteligentes de `/api/checkout`, dentro del límite de carga.
-
-**Descalificación:**
-- Intentos de acceder a rutas no documentadas, o a los archivos o la consola del simulador.
-- Claves en el repositorio.
-- Respuestas de escenarios escritas en el código o en los prompts.
-- Acciones de escritura fuera del ITSM.
-
----
-
-## 9. Preguntas frecuentes
+## 8. Preguntas frecuentes
 
 **¿Tenemos que usar IA para detectar?**
 No necesariamente. Es una decisión de arquitectura que deben justificar. La investigación, el diagnóstico y el reporte sí deben hacerlos agentes con GLM.
 
-**¿A qué velocidad corren los escenarios en la evaluación?**
-A velocidad 1 (tiempo real) o 2, según el tiempo disponible. El jurado lo anunciará. Su sistema debe funcionar a cualquier velocidad.
 
 **¿Podemos usar frameworks de agentes (LangGraph, CrewAI, AutoGen, etc.)?**
 Sí, siempre que los agentes usen GLM en MaaS y puedan explicar el flujo.
 
-**¿El simulador del jurado es igual al del kit?**
-La API que ven sus agentes es exactamente la misma: el jurado ejecuta el mismo `simulador.py`. Cambian los escenarios, y el jurado los controla desde un canal propio al que su sistema no tiene acceso.
 
-**¿Podemos modificar el simulador para probar?**
-Sí, en su copia. Pero su sistema se evaluará contra el simulador original.
+
